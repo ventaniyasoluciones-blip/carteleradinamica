@@ -46,7 +46,8 @@ async function loadRepoImages(){
   if(!res.ok)throw new Error('No se pudo leer el repositorio');
   const data=await res.json();
   const found=(data.tree||[]).filter(x=>x.type==='blob'&&/\.(png|jpe?g|webp|gif|avif)$/i.test(x.path)).map(x=>'https://raw.githubusercontent.com/'+GH_OWNER+'/'+GH_REPO+'/'+branch+'/'+x.path.split('/').map(encodeURIComponent).join('/'));
-  const next=[GH_IMAGE,...found.filter(x=>x!==GH_IMAGE)];
+  const unique=[...new Set(found)];
+  const next=unique.length?unique:[GH_IMAGE];
   const snapshot=next.join('|');
   if(snapshot!==repoSnapshot){
    repoImages=next;
@@ -67,7 +68,7 @@ function showRepoImage(el,index){
  el.appendChild(img);
 }
 function showDirectImage(){
- document.querySelectorAll('.photo').forEach((el,i)=>showRepoImage(el,i));
+ renderRepoCards();
 }
 function renderRepoCards(){
  if(!grid)return;
