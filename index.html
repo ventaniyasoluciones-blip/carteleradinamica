@@ -34,8 +34,8 @@ const nameInput=document.querySelector('input[value="DEMO DIGITAL"]');
 const addressInput=document.querySelector('input[value="Av. Constitución 1001"]');
 const phoneInput=document.querySelector('input[value="+54 223 000 0000"]');
 const socialInput=document.querySelector('input[value="@avisador_demo"]');
-const GH_OWNER='ventaniyasoluciones-blip', GH_REPO='carteleradinamica';
-const GH_IMAGE='https://raw.githubusercontent.com/ventaniyasoluciones-blip/carteleradinamica/main/dodgeup.png';
+const GH_OWNER='ventaniyasoluciones-blip', GH_REPO='carteladinamica';
+const GH_IMAGE='https://raw.githubusercontent.com/ventaniyasoluciones-blip/carteladinamica/main/dodgeup.png';
 let repoImages=[GH_IMAGE], repoSnapshot='';
 const REFRESH_MS=10000;
 async function loadRepoImages(){
@@ -97,6 +97,7 @@ if(fixBtn) fixBtn.addEventListener('click',()=>{
  grid?.prepend(card);
  showRepoImage(card.querySelector('.photo'),0);
 });
+document.querySelectorAll('.photo').forEach((el,i)=>showRepoImage(el,i));
 loadRepoImages();
 setInterval(loadRepoImages,REFRESH_MS);
 tick(); setInterval(tick,25);
