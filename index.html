@@ -34,8 +34,8 @@ const nameInput=document.querySelector('input[value="DEMO DIGITAL"]');
 const addressInput=document.querySelector('input[value="Av. Constitución 1001"]');
 const phoneInput=document.querySelector('input[value="+54 223 000 0000"]');
 const socialInput=document.querySelector('input[value="@avisador_demo"]');
-const GH_OWNER='ventaniyasoluciones-blip', GH_REPO='carteladinamica';
-const GH_IMAGE='https://raw.githubusercontent.com/ventaniyasoluciones-blip/carteladinamica/main/dodgeup.png';
+const GH_OWNER='ventaniyasoluciones-blip', GH_REPO='carteleradinamica';
+const GH_IMAGE='https://raw.githubusercontent.com/ventaniyasoluciones-blip/carteleradinamica/main/dodgeup.png';
 let repoImages=[GH_IMAGE], repoSnapshot='';
 const REFRESH_MS=10000;
 async function loadRepoImages(){
@@ -54,7 +54,7 @@ async function loadRepoImages(){
    renderRepoCards();
   }
   if(!repoImages.length)document.querySelectorAll('.photo').forEach(el=>el.textContent='NO HAY IMÁGENES EN EL REPOSITORIO');
- }catch(e){console.warn('No se pudieron cargar imágenes de GitHub',e);document.querySelectorAll('.photo').forEach(el=>el.textContent='ERROR AL LEER GITHUB');}
+ }catch(e){console.warn('No se pudieron cargar imágenes de GitHub',e);showDirectImage();}
 }
 function showRepoImage(el,index){
  if(!el||!repoImages.length)return;
@@ -65,6 +65,9 @@ function showRepoImage(el,index){
  img.style.cssText='width:100%;height:100%;object-fit:cover;display:block';
  img.onerror=()=>{el.textContent='IMAGEN NO DISPONIBLE';};
  el.appendChild(img);
+}
+function showDirectImage(){
+ document.querySelectorAll('.photo').forEach((el,i)=>showRepoImage(el,i));
 }
 function renderRepoCards(){
  if(!grid)return;
