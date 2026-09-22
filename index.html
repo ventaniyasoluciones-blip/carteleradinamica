@@ -51,20 +51,32 @@ async function loadRepoImages(){
   if(snapshot!==repoSnapshot){
    repoImages=next;
    repoSnapshot=snapshot;
-   document.querySelectorAll('.photo').forEach((el,i)=>showRepoImage(el,i));
+   renderRepoCards();
   }
   if(!repoImages.length)document.querySelectorAll('.photo').forEach(el=>el.textContent='NO HAY IMÁGENES EN EL REPOSITORIO');
  }catch(e){console.warn('No se pudieron cargar imágenes de GitHub',e);document.querySelectorAll('.photo').forEach(el=>el.textContent='ERROR AL LEER GITHUB');}
 }
 function showRepoImage(el,index){
  if(!el||!repoImages.length)return;
- const src=repoImages[index%repoImages.length];
+ const src=repoImages[index%repoImages.length]+'?v='+Date.now();
  el.textContent='';
  const img=document.createElement('img');
  img.src=src; img.alt='Imagen del repositorio GitHub'; img.loading='lazy';
  img.style.cssText='width:100%;height:100%;object-fit:cover;display:block';
  img.onerror=()=>{el.textContent='IMAGEN NO DISPONIBLE';};
  el.appendChild(img);
+}
+function renderRepoCards(){
+ if(!grid)return;
+ grid.querySelectorAll('.repo-auto').forEach(el=>el.remove());
+ repoImages.forEach((src,i)=>{
+  const card=document.createElement('article');
+  card.className='stamp repo-auto';
+  const stamp=liveStamp(), hash=hashStamp(src);
+  card.innerHTML='<div class="stampbar"><div class="digital">'+stamp+'</div><div class="hash">HASH '+hash+'</div></div><div class="photo"></div><div class="stampfoot"><div><div class="seal">⚛ VENTANIYA SOLUCIONES 1001</div><div class="mini">REPOSITORIO · '+src.split('/').pop().split('?')[0]+' · ACTUALIZACIÓN AUTOMÁTICA</div></div><div class="actions"><button class="btn primary">DESCARGAR</button></div></div>';
+  grid.prepend(card);
+  showRepoImage(card.querySelector('.photo'),i);
+ });
 }
 function hashStamp(text){
  let h=2166136261;
