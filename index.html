@@ -20,10 +20,10 @@
 
 body{
  margin:0;
- min-height:100vh;
  background:radial-gradient(circle at 20% 0%,#0b2637 0,#02070d 42%,#000 100%);
  color:var(--white);
  font-family:Arial,Helvetica,sans-serif;
+ min-height:100vh
 }
 
 body:before{
@@ -44,14 +44,14 @@ header{
  position:sticky;
  top:0;
  z-index:5;
- backdrop-filter:blur(10px);
+ backdrop-filter:blur(10px)
 }
 
 .brand{
  display:flex;
  align-items:center;
  justify-content:space-between;
- gap:20px;
+ gap:20px
 }
 
 .title{
@@ -59,10 +59,7 @@ header{
  letter-spacing:.08em;
  font-size:clamp(20px,3vw,36px);
  color:var(--cyan);
- text-shadow:
- 0 0 5px #fff,
- 0 0 14px var(--cyan),
- 0 0 34px var(--cyan2);
+ text-shadow:0 0 5px #fff,0 0 14px var(--cyan),0 0 34px var(--cyan2)
 }
 
 .sub{
@@ -70,7 +67,7 @@ header{
  color:#a9d5df;
  letter-spacing:.14em;
  font-size:12px;
- margin-top:5px;
+ margin-top:5px
 }
 
 .atomic{
@@ -82,17 +79,15 @@ header{
  place-items:center;
  color:var(--cyan);
  font-size:30px;
- box-shadow:
- 0 0 10px #00dfff,
- inset 0 0 15px #00dfff;
- text-shadow:0 0 12px var(--cyan);
+ box-shadow:0 0 10px #00dfff,inset 0 0 15px #00dfff;
+ text-shadow:0 0 12px var(--cyan)
 }
 
 nav{
  display:flex;
  gap:10px;
  margin-top:18px;
- flex-wrap:wrap;
+ flex-wrap:wrap
 }
 
 .tab{
@@ -102,36 +97,33 @@ nav{
  padding:10px 15px;
  border-radius:6px;
  font-weight:700;
- cursor:pointer;
+ cursor:pointer
 }
 
-.tab.active,
-.tab:hover{
+.tab.active,.tab:hover{
  border-color:var(--cyan);
  color:var(--cyan);
- box-shadow:0 0 10px #00dfff44;
+ box-shadow:0 0 10px #00dfff44
 }
 
 main{
  max-width:1320px;
  margin:auto;
- padding:28px;
+ padding:28px
 }
 
 .layout{
  display:grid;
  grid-template-columns:minmax(0,1.5fr) minmax(320px,.7fr);
- gap:24px;
+ gap:24px
 }
 
 .panel{
  background:linear-gradient(145deg,#071723dd,#02080ddd);
  border:1px solid #13506a;
  border-radius:14px;
- box-shadow:
- 0 0 0 1px #06141d,
- 0 10px 40px #0008;
- padding:20px;
+ box-shadow:0 0 0 1px #06141d,0 10px 40px #0008;
+ padding:20px
 }
 
 .panel h2{
@@ -139,20 +131,20 @@ main{
  font-size:15px;
  letter-spacing:.12em;
  color:var(--cyan);
- text-transform:uppercase;
+ text-transform:uppercase
 }
 
 .neonline{
  height:1px;
  background:linear-gradient(90deg,transparent,var(--cyan),transparent);
  box-shadow:0 0 12px var(--cyan);
- margin:0 0 22px;
+ margin:0 0 22px
 }
 
 .grid{
  display:grid;
  grid-template-columns:repeat(2,minmax(0,1fr));
- gap:18px;
+ gap:18px
 }
 
 .stamp{
@@ -160,7 +152,7 @@ main{
  background:#030c14;
  border-radius:10px;
  overflow:hidden;
- box-shadow:0 0 18px #00dfff13;
+ box-shadow:0 0 18px #00dfff13
 }
 
 .stampbar{
@@ -170,7 +162,7 @@ main{
  display:flex;
  justify-content:space-between;
  gap:12px;
- align-items:center;
+ align-items:center
 }
 
 .digital{
@@ -178,12 +170,12 @@ main{
  color:var(--cyan);
  font-size:15px;
  font-weight:800;
- text-shadow:0 0 8px var(--cyan);
+ text-shadow:0 0 8px var(--cyan)
 }
 
 .hash{
  font:11px monospace;
- color:#87c9d7;
+ color:#87c9d7
 }
 
 .photo{
@@ -195,14 +187,14 @@ main{
  font-family:monospace;
  font-size:12px;
  letter-spacing:.15em;
- overflow:hidden;
+ overflow:hidden
 }
 
 .photo img{
  width:100%;
  height:100%;
  object-fit:cover;
- display:block;
+ display:block
 }
 
 .stampfoot{
@@ -210,26 +202,26 @@ main{
  display:flex;
  justify-content:space-between;
  align-items:end;
- gap:10px;
+ gap:10px
 }
 
 .seal{
  color:var(--cyan);
  font-weight:900;
  letter-spacing:.08em;
- text-shadow:0 0 8px var(--cyan);
+ text-shadow:0 0 8px var(--cyan)
 }
 
 .mini{
  color:var(--muted);
- font-size:11px;
+ font-size:11px
 }
 
 .actions{
  display:flex;
  gap:7px;
  flex-wrap:wrap;
- margin-top:10px;
+ margin-top:10px
 }
 
 .btn{
@@ -240,17 +232,17 @@ main{
  border-radius:6px;
  font-size:12px;
  font-weight:800;
- cursor:pointer;
+ cursor:pointer
 }
 
 .btn.primary{
  color:#001116;
  background:var(--cyan);
- box-shadow:0 0 15px #00eaff66;
+ box-shadow:0 0 15px #00eaff66
 }
 
 .btn:hover{
- filter:brightness(1.18);
+ filter:brightness(1.18)
 }
 
 label{
@@ -259,11 +251,10 @@ label{
  font-size:11px;
  text-transform:uppercase;
  letter-spacing:.08em;
- margin:12px 0 5px;
+ margin:12px 0 5px
 }
 
-input,
-textarea{
+input,textarea{
  width:100%;
  background:#020b12;
  color:#eaffff;
@@ -271,18 +262,17 @@ textarea{
  border-radius:6px;
  padding:10px;
  font-family:inherit;
- outline:none;
+ outline:none
 }
 
-input:focus,
-textarea:focus{
+input:focus,textarea:focus{
  border-color:var(--cyan);
- box-shadow:0 0 10px #00eaff33;
+ box-shadow:0 0 10px #00eaff33
 }
 
 textarea{
  min-height:70px;
- resize:vertical;
+ resize:vertical
 }
 
 .drop{
@@ -292,13 +282,13 @@ textarea{
  border-radius:8px;
  color:#7fb4c1;
  margin-bottom:12px;
- cursor:pointer;
+ cursor:pointer
 }
 
 .drop strong{
  display:block;
  color:var(--cyan);
- margin-bottom:5px;
+ margin-bottom:5px
 }
 
 .preview{
@@ -306,14 +296,14 @@ textarea{
  border:1px solid #134e65;
  border-radius:8px;
  padding:14px;
- background:#020b12;
+ background:#020b12
 }
 
 .preview h3{
  margin:0 0 12px;
  font-size:12px;
  color:var(--cyan);
- letter-spacing:.1em;
+ letter-spacing:.1em
 }
 
 .previewbox{
@@ -323,15 +313,7 @@ textarea{
  place-items:center;
  font:18px monospace;
  color:var(--cyan);
- text-shadow:0 0 10px var(--cyan);
- text-align:center;
-}
-
-.logo-preview{
- max-width:100%;
- max-height:90px;
- margin-top:10px;
- display:none;
+ text-shadow:0 0 10px var(--cyan)
 }
 
 .status{
@@ -340,7 +322,7 @@ textarea{
  align-items:center;
  color:#94c9d5;
  font:11px monospace;
- margin-top:16px;
+ margin-top:16px
 }
 
 .dot{
@@ -348,7 +330,7 @@ textarea{
  height:8px;
  border-radius:50%;
  background:#31ffb0;
- box-shadow:0 0 10px #31ffb0;
+ box-shadow:0 0 10px #31ffb0
 }
 
 .footer{
@@ -356,35 +338,22 @@ textarea{
  text-align:center;
  color:#4e8190;
  font:11px monospace;
- letter-spacing:.08em;
+ letter-spacing:.08em
 }
 
 @media(max-width:900px){
- .layout{
-  grid-template-columns:1fr;
- }
- .grid{
-  grid-template-columns:1fr;
- }
+ .layout{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr}
 }
 
 @media(max-width:560px){
- main{
-  padding:14px;
- }
-
- .grid{
-  grid-template-columns:1fr;
- }
-
- .brand{
-  align-items:flex-start;
- }
-
+ main{padding:14px}
+ .grid{grid-template-columns:1fr}
+ .brand{align-items:flex-start}
  .atomic{
   width:54px;
   height:54px;
-  font-size:23px;
+  font-size:23px
  }
 }
 </style>
@@ -398,7 +367,6 @@ textarea{
 
 <div>
 <div class="title">VENTANIYA SOLUCIONES</div>
-
 <div class="sub">
 1001 · CARTELERA DE ESTAMPILLAS DE TIEMPO · RETRO DIGITAL
 </div>
@@ -416,7 +384,6 @@ textarea{
 </nav>
 
 </header>
-
 
 <main>
 
@@ -444,13 +411,8 @@ CARGANDO IMAGEN...
 <div class="stampfoot">
 
 <div>
-<div class="seal">
-⚛ VENTANIYA SOLUCIONES 1001
-</div>
-
-<div class="mini">
-AVISADOR: DEMO DIGITAL
-</div>
+<div class="seal">⚛ VENTANIYA SOLUCIONES 1001</div>
+<div class="mini">AVISADOR: DEMO DIGITAL</div>
 </div>
 
 <div class="actions">
@@ -470,7 +432,6 @@ SISTEMA VISUAL · CARTELERA ACTIVA · SINCRONIZACIÓN LISTA
 
 </section>
 
-
 <aside class="panel">
 
 <h2>Editor de avisador</h2>
@@ -478,7 +439,6 @@ SISTEMA VISUAL · CARTELERA ACTIVA · SINCRONIZACIÓN LISTA
 <div class="drop" id="logoDrop">
 
 <strong>＋ CARGAR LOGO</strong>
-
 PNG / JPG / WEBP · hacer clic para seleccionar
 
 <input
@@ -488,42 +448,19 @@ accept="image/png,image/jpeg,image/webp"
 style="display:none"
 >
 
-<img id="logoPreview" class="logo-preview">
-
 </div>
 
-
 <label>Nombre del avisador</label>
-
-<input
-id="nameInput"
-value="DEMO DIGITAL"
->
-
+<input id="nameInput" value="DEMO DIGITAL">
 
 <label>Dirección</label>
-
-<input
-id="addressInput"
-value="Av. Constitución 1001"
->
-
+<input id="addressInput" value="Av. Constitución 1001">
 
 <label>Teléfono</label>
-
-<input
-id="phoneInput"
-value="+54 223 000 0000"
->
-
+<input id="phoneInput" value="+54 223 000 0000">
 
 <label>Redes sociales</label>
-
-<input
-id="socialInput"
-value="@avisador_demo"
->
-
+<input id="socialInput" value="@avisador_demo">
 
 <label>Texto adicional</label>
 
@@ -532,20 +469,15 @@ id="textInput"
 placeholder="Información opcional para la estampilla"
 ></textarea>
 
-
 <div class="preview">
 
 <h3>VISTA PREVIA</h3>
 
-<div
-class="previewbox"
-id="previewBox"
->
+<div class="previewbox" id="previewBox">
 CARGANDO...
 </div>
 
 </div>
-
 
 <div class="actions">
 
@@ -573,122 +505,90 @@ style="flex:1"
 
 </main>
 
-
 <div class="footer">
-
 TIMESTAMP VISUAL · FECHA 24H · MILISEGUNDOS · HASH DE IDENTIFICACIÓN · VENTANIYA SOLUCIONES “1001”
-
 </div>
-
 
 <script>
 
-const OWNER = "ventaniyasoluciones-blip";
+const OWNER="ventaniyasoluciones-blip";
+const REPO="carteladinamica";
 
-const REPO = "carteladinamica";
+const preview=document.getElementById("previewBox");
+const grid=document.getElementById("cartelera");
+const fixBtn=document.getElementById("fixBtn");
+const downloadBtn=document.getElementById("downloadBtn");
 
-const previewBox =
-document.getElementById("previewBox");
+const logoDrop=document.getElementById("logoDrop");
+const logoInput=document.getElementById("logoInput");
 
-const cartelera =
-document.getElementById("cartelera");
+const nameInput=document.getElementById("nameInput");
+const addressInput=document.getElementById("addressInput");
+const phoneInput=document.getElementById("phoneInput");
+const socialInput=document.getElementById("socialInput");
+const textInput=document.getElementById("textInput");
 
-const fixBtn =
-document.getElementById("fixBtn");
-
-const downloadBtn =
-document.getElementById("downloadBtn");
-
-const logoDrop =
-document.getElementById("logoDrop");
-
-const logoInput =
-document.getElementById("logoInput");
-
-const logoPreview =
-document.getElementById("logoPreview");
-
-const nameInput =
-document.getElementById("nameInput");
-
-const addressInput =
-document.getElementById("addressInput");
-
-const phoneInput =
-document.getElementById("phoneInput");
-
-const socialInput =
-document.getElementById("socialInput");
-
-const textInput =
-document.getElementById("textInput");
-
-let logoData = "";
-let repoImages = [];
+let logoData="";
+let repoImages=[];
 
 
-/* =========================
-   RELOJ DIGITAL
-========================= */
+/* RELOJ */
 
 function liveStamp(){
 
- const d = new Date();
+ const d=new Date();
 
- const p = n =>
- String(n).padStart(2,"0");
+ const p=n=>String(n).padStart(2,"0");
 
- const ms =
- String(d.getMilliseconds()).padStart(3,"0");
+ const ms=String(
+  d.getMilliseconds()
+ ).padStart(3,"0");
 
  return (
- p(d.getDate()) +
- "/" +
- p(d.getMonth()+1) +
- "/" +
- d.getFullYear() +
- " · " +
- p(d.getHours()) +
- ":" +
- p(d.getMinutes()) +
- ":" +
- p(d.getSeconds()) +
- "." +
- ms
+  p(d.getDate())+
+  "/"+
+  p(d.getMonth()+1)+
+  "/"+
+  d.getFullYear()+
+  " · "+
+  p(d.getHours())+
+  ":"+
+  p(d.getMinutes())+
+  ":"+
+  p(d.getSeconds())+
+  "."+
+  ms
  );
 
 }
 
-
 function tick(){
 
- previewBox.textContent =
- liveStamp();
+ preview.textContent=
+ liveStamp()+
+ " · HASH EN VIVO";
 
 }
 
 setInterval(tick,25);
-
 tick();
 
 
-/* =========================
-   HASH
-========================= */
+/* HASH */
 
 function hashStamp(text){
 
- let h = 2166136261;
+ let h=2166136261;
 
  for(let i=0;i<text.length;i++){
 
-  h ^= text.charCodeAt(i);
+  h^=text.charCodeAt(i);
 
-  h = Math.imul(h,16777619);
+  h=Math.imul(h,16777619);
 
  }
 
- return (h >>> 0)
+ return (h>>>0)
  .toString(16)
  .toUpperCase()
  .padStart(8,"0")
@@ -698,708 +598,517 @@ function hashStamp(text){
 }
 
 
-/* =========================
-   LOGO
-========================= */
+/* LOGO */
 
 logoDrop.addEventListener(
-"click",
-() => logoInput.click()
+ "click",
+ ()=>logoInput.click()
+);
+
+logoInput.addEventListener(
+ "change",
+ event=>{
+
+  const file=
+  event.target.files[0];
+
+  if(!file)return;
+
+  const reader=
+  new FileReader();
+
+  reader.onload=()=>{
+
+   logoData=
+   reader.result;
+
+   logoDrop.querySelector("strong")
+   .textContent=
+   "✓ LOGO CARGADO";
+
+  };
+
+  reader.readAsDataURL(file);
+
+ }
 );
 
 
-logoInput.addEventListener(
-"change",
-event => {
-
- const file =
- event.target.files[0];
-
- if(!file)return;
-
- const reader =
- new FileReader();
-
- reader.onload = () => {
-
-  logoData =
-  reader.result;
-
-  logoPreview.src =
-  logoData;
-
-  logoPreview.style.display =
-  "block";
-
- };
-
- reader.readAsDataURL(file);
-
-});
-
-
-/* =========================
-   GITHUB
-========================= */
+/* GITHUB */
 
 async function loadRepoImages(){
 
  try{
 
-  const repoURL =
-  "https://api.github.com/repos/" +
-  OWNER +
-  "/" +
-  REPO;
-
-  const metaResponse =
-  await fetch(repoURL);
+  const metaResponse=
+  await fetch(
+   "https://api.github.com/repos/"+
+   OWNER+
+   "/"+
+   REPO
+  );
 
   if(!metaResponse.ok){
 
    throw new Error(
-   "No se puede acceder al repositorio"
+    "Repositorio no accesible"
    );
 
   }
 
-  const meta =
+  const meta=
   await metaResponse.json();
 
-  const branch =
-  meta.default_branch || "main";
+  const branch=
+  meta.default_branch||"main";
 
-  const treeURL =
-  "https://api.github.com/repos/" +
-  OWNER +
-  "/" +
-  REPO +
-  "/git/trees/" +
-  encodeURIComponent(branch) +
-  "?recursive=1";
+  const res=
+  await fetch(
+   "https://api.github.com/repos/"+
+   OWNER+
+   "/"+
+   REPO+
+   "/git/trees/"+
+   encodeURIComponent(branch)+
+   "?recursive=1"
+  );
 
-  const response =
-  await fetch(treeURL);
-
-  if(!response.ok){
+  if(!res.ok){
 
    throw new Error(
-   "No se pudo leer el repositorio"
+    "No se pudo leer el repositorio"
    );
 
   }
 
-  const data =
-  await response.json();
+  const data=
+  await res.json();
 
-  repoImages =
-  (data.tree || [])
-
-  .filter(file =>
-   file.type === "blob" &&
+  repoImages=
+  (data.tree||[])
+  .filter(x=>
+   x.type==="blob" &&
    /\.(png|jpe?g|webp|gif|avif)$/i
-   .test(file.path)
+   .test(x.path)
   )
-
-  .map(file => {
-
-   return (
-   "https://raw.githubusercontent.com/" +
-   OWNER +
-   "/" +
-   REPO +
-   "/" +
-   branch +
-   "/" +
-   file.path
+  .map(x=>
+   "https://raw.githubusercontent.com/"+
+   OWNER+
+   "/"+
+   REPO+
+   "/"+
+   branch+
+   "/"+
+   x.path
    .split("/")
    .map(encodeURIComponent)
    .join("/")
-   );
+  );
 
-  });
-
+  document
+  .querySelectorAll(".photo")
+  .forEach((el,i)=>
+   showRepoImage(el,i)
+  );
 
   if(!repoImages.length){
 
    document
    .querySelectorAll(".photo")
-   .forEach(el => {
-
-    el.textContent =
-    "NO HAY IMÁGENES EN GITHUB";
-
-   });
-
-   return;
+   .forEach(el=>
+    el.textContent=
+    "NO HAY IMÁGENES EN EL REPOSITORIO"
+   );
 
   }
 
+ }catch(e){
+
+  console.error(e);
 
   document
   .querySelectorAll(".photo")
-  .forEach((el,index) => {
-
-   showRepoImage(el,index);
-
-  });
-
- }
-
- catch(error){
-
-  console.error(error);
-
-  document
-  .querySelectorAll(".photo")
-  .forEach(el => {
-
-   el.textContent =
-   "ERROR AL LEER GITHUB";
-
-  });
+  .forEach(el=>
+   el.textContent=
+   "ERROR AL LEER GITHUB"
+  );
 
  }
 
 }
 
 
-/* =========================
-   MOSTRAR IMAGEN
-========================= */
+/* MOSTRAR IMAGEN */
 
-function showRepoImage(
- element,
- index
-){
+function showRepoImage(el,index){
 
- if(!element ||
- !repoImages.length)return;
+ if(!el||!repoImages.length)return;
 
- const src =
- repoImages[index % repoImages.length];
+ const src=
+ repoImages[
+  index%repoImages.length
+ ];
 
- element.innerHTML = "";
+ el.textContent="";
 
- const img =
+ const img=
  document.createElement("img");
 
- img.src = src;
+ img.src=src;
 
- img.alt =
- "Imagen del repositorio";
+ img.alt=
+ "Imagen del repositorio GitHub";
 
- img.loading = "lazy";
+ img.loading="lazy";
 
- img.onerror = () => {
+ img.onerror=()=>{
 
-  element.textContent =
+  el.textContent=
   "IMAGEN NO DISPONIBLE";
 
  };
 
- element.appendChild(img);
+ el.appendChild(img);
 
 }
 
 
-/* =========================
-   CREAR ESTAMPILLA
-========================= */
+/* FIJAR */
 
 fixBtn.addEventListener(
-"click",
-() => {
+ "click",
+ ()=>{
 
- const stamp =
- liveStamp();
+  const stamp=
+  liveStamp();
 
- const name =
- nameInput.value.trim() ||
- "AVISADOR";
+  const name=
+  nameInput.value||
+  "AVISADOR";
 
- const address =
- addressInput.value.trim();
+  const address=
+  addressInput.value;
 
- const phone =
- phoneInput.value.trim();
+  const phone=
+  phoneInput.value;
 
- const social =
- socialInput.value.trim();
+  const social=
+  socialInput.value;
 
- const extra =
- textInput.value.trim();
+  const extra=
+  textInput.value;
 
- const hash =
- hashStamp(
-  stamp +
-  "|" +
-  name +
-  "|" +
-  address +
-  "|" +
-  phone +
-  "|" +
-  social +
-  "|" +
-  extra
- );
+  const hash=
+  hashStamp(
+   stamp+
+   "|"+
+   name+
+   "|"+
+   address+
+   "|"+
+   phone+
+   "|"+
+   social+
+   "|"+
+   extra
+  );
 
+  const card=
+  document.createElement("article");
 
- const card =
- document.createElement("article");
+  card.className="stamp";
 
- card.className =
- "stamp";
-
-
- const bar =
- document.createElement("div");
-
- bar.className =
- "stampbar";
-
-
- const digital =
- document.createElement("div");
-
- digital.className =
- "digital";
-
- digital.textContent =
- stamp;
-
-
- const hashElement =
- document.createElement("div");
-
- hashElement.className =
- "hash";
-
- hashElement.textContent =
- "HASH " + hash;
-
-
- bar.appendChild(digital);
-
- bar.appendChild(hashElement);
-
-
- const photo =
- document.createElement("div");
-
- photo.className =
- "photo";
-
-
- if(logoData){
-
-  const img =
-  document.createElement("img");
-
-  img.src =
-  logoData;
-
-  img.alt =
-  "Logo del avisador";
-
-  photo.appendChild(img);
-
- }
-
- else if(repoImages.length){
-
-  showRepoImage(photo,0);
-
- }
-
- else{
-
-  photo.textContent =
-  "SIN IMAGEN";
-
- }
-
-
- const foot =
- document.createElement("div");
-
- foot.className =
- "stampfoot";
-
-
- const info =
- document.createElement("div");
-
-
- const seal =
- document.createElement("div");
-
- seal.className =
- "seal";
-
- seal.textContent =
- "⚛ VENTANIYA SOLUCIONES 1001";
-
-
- const mini =
- document.createElement("div");
-
- mini.className =
- "mini";
-
- mini.textContent =
- "AVISADOR: " +
- name +
- " · " +
- address +
- " · " +
- phone +
- " · " +
- social;
-
-
- info.appendChild(seal);
-
- info.appendChild(mini);
-
-
- if(extra){
-
-  const extraElement =
+  const stampbar=
   document.createElement("div");
 
-  extraElement.className =
-  "mini";
+  stampbar.className="stampbar";
 
-  extraElement.textContent =
-  extra;
+  stampbar.innerHTML=
+  '<div class="digital">'+
+  stamp+
+  '</div>'+
+  '<div class="hash">HASH '+
+  hash+
+  '</div>';
 
-  info.appendChild(extraElement);
+  const photo=
+  document.createElement("div");
 
- }
+  photo.className="photo";
 
+  if(logoData){
 
- const actions =
- document.createElement("div");
+   const img=
+   document.createElement("img");
 
- actions.className =
- "actions";
+   img.src=logoData;
 
+   img.alt="Logo";
 
- const edit =
- document.createElement("button");
+   photo.appendChild(img);
 
- edit.className =
- "btn";
+  }else if(repoImages.length){
 
- edit.textContent =
- "EDITAR";
+   showRepoImage(photo,0);
 
+  }else{
 
- const download =
- document.createElement("button");
-
- download.className =
- "btn primary";
-
- download.textContent =
- "DESCARGAR";
-
-
- actions.appendChild(edit);
-
- actions.appendChild(download);
-
-
- foot.appendChild(info);
-
- foot.appendChild(actions);
-
-
- card.appendChild(bar);
-
- card.appendChild(photo);
-
- card.appendChild(foot);
-
-
- cartelera.prepend(card);
-
-
- download.addEventListener(
- "click",
- () => downloadStamp(
-  stamp,
-  hash,
-  name,
-  address,
-  phone,
-  social,
-  extra,
-  logoData,
-  photo
- )
- );
-
-
- edit.addEventListener(
- "click",
- () => {
-
-  nameInput.value =
-  name;
-
-  addressInput.value =
-  address;
-
-  phoneInput.value =
-  phone;
-
-  socialInput.value =
-  social;
-
-  textInput.value =
-  extra;
-
-  window.scrollTo({
-   top:0,
-   behavior:"smooth"
-  });
-
- }
- );
-
-});
-
-
-/* =========================
-   DESCARGAR
-========================= */
-
-function downloadStamp(
- stamp,
- hash,
- name,
- address,
- phone,
- social,
- extra,
- logo,
- photo
-){
-
- const canvas =
- document.createElement("canvas");
-
- canvas.width = 1200;
-
- canvas.height = 700;
-
- const ctx =
- canvas.getContext("2d");
-
-
- /* FONDO */
-
- ctx.fillStyle =
- "#020a12";
-
- ctx.fillRect(
- 0,
- 0,
- canvas.width,
- canvas.height
- );
-
-
- /* BORDE NEON */
-
- ctx.strokeStyle =
- "#4df7ff";
-
- ctx.lineWidth =
- 4;
-
- ctx.strokeRect(
- 20,
- 20,
- 1160,
- 660
- );
-
-
- /* TITULO */
-
- ctx.fillStyle =
- "#4df7ff";
-
- ctx.font =
- "bold 42px monospace";
-
- ctx.shadowColor =
- "#00eaff";
-
- ctx.shadowBlur =
- 18;
-
- ctx.fillText(
- "VENTANIYA SOLUCIONES 1001",
- 60,
- 80
- );
-
- ctx.shadowBlur =
- 0;
-
-
- /* FECHA */
-
- ctx.fillStyle =
- "#4df7ff";
-
- ctx.font =
- "bold 30px monospace";
-
- ctx.fillText(
- stamp,
- 60,
- 140
- );
-
-
- /* HASH */
-
- ctx.font =
- "22px monospace";
-
- ctx.fillStyle =
- "#87c9d7";
-
- ctx.fillText(
- "HASH " + hash,
- 60,
- 180
- );
-
-
- /* IMAGEN */
-
- if(logo){
-
-  const img =
-  new Image();
-
-  img.onload = () => {
-
-   ctx.drawImage(
-   img,
-   60,
-   220,
-   300,
-   220
-   );
-
-   finishCanvas();
-
-  };
-
-  img.src =
-  logo;
-
- }
- else{
-
-  finishCanvas();
-
- }
-
-
- function finishCanvas(){
-
-  ctx.fillStyle =
-  "#4df7ff";
-
-  ctx.font =
-  "bold 28px Arial";
-
-  ctx.fillText(
-  "AVISADOR: " + name,
-  410,
-  270
-  );
-
-  ctx.fillStyle =
-  "#a9d5df";
-
-  ctx.font =
-  "22px Arial";
-
-  ctx.fillText(
-  address,
-  410,
-  315
-  );
-
-  ctx.fillText(
-  phone,
-  410,
-  355
-  );
-
-  ctx.fillText(
-  social,
-  410,
-  395
-  );
-
-  if(extra){
-
-   ctx.fillText(
-   extra,
-   410,
-   435
-   );
+   photo.textContent=
+   "SIN IMAGEN";
 
   }
 
+  const foot=
+  document.createElement("div");
 
-  ctx.fillStyle =
-  "#4df7ff";
+  foot.className="stampfoot";
 
-  ctx.font =
-  "bold 24px monospace";
+  const info=
+  document.createElement("div");
 
-  ctx.fillText(
-  "⚛ VENTANIYA SOLUCIONES 1001",
-  60,
-  620
+  const seal=
+  document.createElement("div");
+
+  seal.className="seal";
+
+  seal.textContent=
+  "⚛ VENTANIYA SOLUCIONES 1001";
+
+  const mini=
+  document.createElement("div");
+
+  mini.className="mini";
+
+  mini.textContent=
+  "AVISADOR: "+
+  name+
+  " · "+
+  address+
+  " · "+
+  phone+
+  " · "+
+  social;
+
+  info.appendChild(seal);
+  info.appendChild(mini);
+
+  if(extra){
+
+   const extraEl=
+   document.createElement("div");
+
+   extraEl.className="mini";
+
+   extraEl.textContent=extra;
+
+   info.appendChild(extraEl);
+
+  }
+
+  const actions=
+  document.createElement("div");
+
+  actions.className="actions";
+
+  const edit=
+  document.createElement("button");
+
+  edit.className="btn";
+  edit.textContent="EDITAR";
+
+  const download=
+  document.createElement("button");
+
+  download.className=
+  "btn primary";
+
+  download.textContent=
+  "DESCARGAR";
+
+  actions.appendChild(edit);
+  actions.appendChild(download);
+
+  foot.appendChild(info);
+  foot.appendChild(actions);
+
+  card.appendChild(stampbar);
+  card.appendChild(photo);
+  card.appendChild(foot);
+
+  grid.prepend(card);
+
+  download.addEventListener(
+   "click",
+   ()=>{
+    alert(
+     "ESTAMPILLA "+hash+
+     "\n\n"+
+     stamp+
+     "\n"+
+     name
+    );
+   }
   );
 
+  edit.addEventListener(
+   "click",
+   ()=>{
 
-  const link =
-  document.createElement("a");
+    nameInput.value=name;
+    addressInput.value=address;
+    phoneInput.value=phone;
+    socialInput.value=social;
+    textInput.value=extra;
 
-  link.download =
-  "estampilla-" +
-  hash.replaceAll("-","") +
-  ".png";
+    window.scrollTo({
+     top:0,
+     behavior:"smooth"
+    });
 
-  link.href =
-  canvas.toDataURL(
-  "image/png"
+   }
   );
-
-  link.click();
 
  }
+);
 
-}
+
+/* DESCARGAR */
+
+downloadBtn.addEventListener(
+ "click",
+ ()=>{
+
+  const stamp=
+  liveStamp();
+
+  const name=
+  nameInput.value||
+  "AVISADOR";
+
+  const hash=
+  hashStamp(
+   stamp+
+   "|"+
+   name+
+   "|"+
+   addressInput.value+
+   "|"+
+   phoneInput.value+
+   "|"+
+   socialInput.value
+  );
+
+  const canvas=
+  document.createElement("canvas");
+
+  canvas.width=1200;
+  canvas.height=650;
+
+  const ctx=
+  canvas.getContext("2d");
+
+  ctx.fillStyle="#020a12";
+
+  ctx.fillRect(
+   0,0,1200,650
+  );
+
+  ctx.strokeStyle="#4df7ff";
+
+  ctx.lineWidth=5;
+
+  ctx.strokeRect(
+   20,20,1160,610
+  );
+
+  ctx.shadowColor="#4df7ff";
+  ctx.shadowBlur=20;
+
+  ctx.fillStyle="#4df7ff";
+
+  ctx.font=
+  "bold 40px monospace";
+
+  ctx.fillText(
+   "VENTANIYA SOLUCIONES 1001",
+   60,80
+  );
+
+  ctx.shadowBlur=0;
+
+  ctx.font=
+  "bold 28px monospace";
+
+  ctx.fillText(
+   stamp,
+   60,140
+  );
+
+  ctx.font=
+  "20px monospace";
+
+  ctx.fillStyle="#87c9d7";
+
+  ctx.fillText(
+   "HASH "+hash,
+   60,180
+  );
+
+  ctx.fillStyle="#4df7ff";
+
+  ctx.font=
+  "bold 30px Arial";
+
+  ctx.fillText(
+   "AVISADOR: "+name,
+   60,280
+  );
+
+  ctx.fillStyle="#a9d5df";
+
+  ctx.font="22px Arial";
+
+  ctx.fillText(
+   addressInput.value,
+   60,325
+  );
+
+  ctx.fillText(
+   phoneInput.value,
+   60,365
+  );
+
+  ctx.fillText(
+   socialInput.value,
+   60,405
+  );
+
+  ctx.fillStyle="#4df7ff";
+
+  ctx.font=
+  "bold 25px monospace";
+
+  ctx.fillText(
+   "⚛ VENTANIYA SOLUCIONES 1001",
+   60,560
+  );
+
+  const a=
+  document.createElement("a");
+
+  a.download=
+  "ESTAMPILLA-"+hash+".png";
+
+  a.href=
+  canvas.toDataURL("image/png");
+
+  a.click();
+
+ }
+);
 
 
-/* =========================
-   ARRANQUE
-========================= */
+/* INICIO */
 
 loadRepoImages();
 
